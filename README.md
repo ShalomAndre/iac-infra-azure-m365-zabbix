@@ -1,6 +1,6 @@
 # Arquitetura em Azure com Monitoramento e Microsoft 365
 
-schema%20infra%20png%202.png
+![Diagrama da Arquitetura](iac-infra.png)
 
 ## Descrição do Projeto
 Este projeto demonstra a implementação de uma infraestrutura híbrida utilizando **Microsoft Azure**, **Active Directory**, **Microsoft 365**, e ferramentas de monitoramento como **Zabbix** e **Grafana**. O objetivo é criar um ambiente corporativo seguro, escalável e monitorado, com integração entre sistemas Windows e Linux.
