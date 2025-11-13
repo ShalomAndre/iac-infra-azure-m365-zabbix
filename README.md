@@ -141,6 +141,5 @@ resource "azurerm_windows_virtual_machine" "vm" {
 ---
 
 ## Autor
-![Diagrama da Arquitetura](iac-infra.png)
-![Diagrama da Arquitetura](iac-infra.png)
+![Diagrama da Arquitetura](Imagem1.jpg)
 [LinkedIn](https://www.linkedin.com/) | [YouTube](https://www.youtube.com/channel/UC7c3-2DMDQcFIy9CgX7GiuQ&sub_confirmation=1)
