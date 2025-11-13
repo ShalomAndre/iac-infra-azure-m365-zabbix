@@ -43,7 +43,7 @@ A arquitetura é composta pelos seguintes elementos:
 
 ## Passos para Implementação
 ### 1. Provisionamento no Azure
-![Diagrama da Arquitetura](iac-infra.png)
+![Diagrama da Arquitetura](ProvisionTerraformSchema.png)
 - Criar recursos via Terraform:
   - VNet, Subnets, NSG.
   - VMs (Windows e Linux).
