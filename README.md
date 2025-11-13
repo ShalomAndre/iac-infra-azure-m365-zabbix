@@ -43,6 +43,7 @@ A arquitetura é composta pelos seguintes elementos:
 
 ## Passos para Implementação
 ### 1. Provisionamento no Azure
+![Diagrama da Arquitetura](iac-infra.png)
 - Criar recursos via Terraform:
   - VNet, Subnets, NSG.
   - VMs (Windows e Linux).
@@ -94,12 +95,14 @@ resource "azurerm_windows_virtual_machine" "vm" {
 ```
 
 ## 2. Configuração do Active Directory
+![Diagrama da Arquitetura](ConfigurationSchema.png)
 - Instalar e promover o Windows Server como **Domain Controller**.
 - Criar usuários e grupos.
 
 ---
 
-## 3. Troubleshooting Comum no Windows Server
+## 3. Troubleshooting Comum no Windows Server & Workstation
+![Diagrama da Arquitetura](TroubleshootingTerraformSchema.png)
 - Problemas de DNS e resolução de nomes.
 - Falhas na replicação do Active Directory.
 - Erros de autenticação (**Kerberos/NTLM**).
@@ -108,12 +111,14 @@ resource "azurerm_windows_virtual_machine" "vm" {
 ---
 
 ## 4. Integração com Microsoft 365
+![Diagrama da Arquitetura](ImplementationM365TerraformSchema.png)
 - Sincronizar AD com **Azure AD**.
 - Configurar licenças e permissões.
 
 ---
 
 ## 5. Troubleshooting Comum no Microsoft 365
+![Diagrama da Arquitetura](TroubleshootingM365TerraformSchema.png)
 - Problemas de login e autenticação multifator.
 - Falhas na sincronização de e-mails (**Outlook**).
 - Erros de **Teams** (conexão e chamadas).
@@ -122,6 +127,8 @@ resource "azurerm_windows_virtual_machine" "vm" {
 ---
 
 ## 6. Monitoramento
+![Diagrama da Arquitetura](MonitoringTerraformSchema.png)
+
 - Instalar **Zabbix Server** no Ubuntu.
 - Configurar agentes nas VMs.
 - Criar dashboards no **Grafana**.
@@ -134,5 +141,6 @@ resource "azurerm_windows_virtual_machine" "vm" {
 ---
 
 ## Autor
-**Shalom André**  
-[LinkedIn](https://www.linkedin.com/) | [GitHub](https://github.com/)
+![Diagrama da Arquitetura](iac-infra.png)
+![Diagrama da Arquitetura](iac-infra.png)
+[LinkedIn](https://www.linkedin.com/) | [YouTube](https://www.youtube.com/channel/UC7c3-2DMDQcFIy9CgX7GiuQ&sub_confirmation=1)
